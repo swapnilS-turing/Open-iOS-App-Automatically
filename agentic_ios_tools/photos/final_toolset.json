@@ -1,0 +1,18 @@
+[
+  {
+    "declaration": {
+      "name": "open_photos",
+      "description": "Open the Photos app.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_photos"
+    }
+  }
+]

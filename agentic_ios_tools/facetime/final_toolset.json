@@ -1,0 +1,24 @@
+[
+  {
+    "declaration": {
+      "name": "open_facetime",
+      "description": "Start a FaceTime call with a phone number or Apple ID email.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "phone_or_email": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "phone_or_email"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_facetime"
+    }
+  }
+]

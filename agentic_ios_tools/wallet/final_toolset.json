@@ -1,0 +1,18 @@
+[
+  {
+    "declaration": {
+      "name": "open_wallet",
+      "description": "Open Apple Wallet.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_wallet"
+    }
+  }
+]

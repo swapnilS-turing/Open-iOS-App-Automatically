@@ -1,0 +1,27 @@
+[
+  {
+    "declaration": {
+      "name": "open_whatsapp_send",
+      "description": "Open WhatsApp chat with a phone number and optional prefilled text.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "phone": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "phone"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_whatsapp_send"
+    }
+  }
+]

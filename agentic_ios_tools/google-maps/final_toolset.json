@@ -1,0 +1,28 @@
+[
+  {
+    "declaration": {
+      "name": "open_google_maps_streetview",
+      "description": "Open Google Maps Street View at a coordinate with an optional query.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "q": {
+            "type": "string"
+          },
+          "center_lat": {
+            "type": "string"
+          },
+          "center_lng": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_google_maps_streetview"
+    }
+  }
+]

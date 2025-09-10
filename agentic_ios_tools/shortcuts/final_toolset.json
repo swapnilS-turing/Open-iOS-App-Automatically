@@ -1,0 +1,22 @@
+[
+  {
+    "declaration": {
+      "name": "open_shortcuts",
+      "description": "Open the Shortcuts app or run a shortcut by name.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_shortcuts"
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "declaration": {
+      "name": "open_mailto",
+      "description": "Compose an email via mailto: with recipient, cc/bcc, subject, and body.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "recipient": {
+            "type": "string"
+          },
+          "cc": {
+            "type": "string"
+          },
+          "bcc": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "recipient"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_mailto"
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "declaration": {
+      "name": "open_things_add",
+      "description": "Add a to-do in Things 3 with optional notes, when, deadline, tags, list.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "when": {
+            "type": "string"
+          },
+          "deadline": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "string"
+          },
+          "list_name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_things_add"
+    }
+  }
+]

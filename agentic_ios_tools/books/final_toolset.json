@@ -1,0 +1,18 @@
+[
+  {
+    "declaration": {
+      "name": "open_books",
+      "description": "Open Apple Books (iBooks).",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_books"
+    }
+  }
+]

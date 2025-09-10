@@ -1,0 +1,24 @@
+[
+  {
+    "declaration": {
+      "name": "open_calendar_date",
+      "description": "Open Calendar to a specific date (YYYY-MM-DD).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "date_yyyy_mm_dd": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "date_yyyy_mm_dd"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_calendar_date"
+    }
+  }
+]

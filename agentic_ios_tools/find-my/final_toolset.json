@@ -1,0 +1,22 @@
+[
+  {
+    "declaration": {
+      "name": "open_findmy",
+      "description": "Open Find My app, optionally to a specific tab like items or people.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "tab": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_findmy"
+    }
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "declaration": {
+      "name": "open_reminders",
+      "description": "Open the Reminders app.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_reminders"
+    }
+  }
+]

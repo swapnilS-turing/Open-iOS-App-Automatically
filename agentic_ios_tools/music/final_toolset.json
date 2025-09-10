@@ -1,0 +1,18 @@
+[
+  {
+    "declaration": {
+      "name": "open_music",
+      "description": "Open the Apple Music app.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_music"
+    }
+  }
+]

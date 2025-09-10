@@ -1,0 +1,24 @@
+[
+  {
+    "declaration": {
+      "name": "open_spotify_search",
+      "description": "Search on Spotify for an artist/track/album.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_spotify_search"
+    }
+  }
+]

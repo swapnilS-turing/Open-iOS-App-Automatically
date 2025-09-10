@@ -1,0 +1,29 @@
+[
+  {
+    "declaration": {
+      "name": "open_settings_pane",
+      "description": "Open iOS Settings to a specific pane (private API).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "root": {
+            "type": "string",
+            "description": "Example: WIFI, Bluetooth, General"
+          },
+          "path": {
+            "type": "string",
+            "description": "Optional subpath, e.g. About"
+          }
+        },
+        "required": [
+          "root"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_settings_pane"
+    }
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "declaration": {
+      "name": "open_uber_setpickup",
+      "description": "Request an Uber ride with pickup/dropoff and product_id.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "pickup_lat": {
+            "type": "string"
+          },
+          "pickup_lng": {
+            "type": "string"
+          },
+          "pickup_nickname": {
+            "type": "string"
+          },
+          "dropoff_lat": {
+            "type": "string"
+          },
+          "dropoff_lng": {
+            "type": "string"
+          },
+          "dropoff_nickname": {
+            "type": "string"
+          },
+          "product_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "pickup_lat",
+          "pickup_lng"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_uber_setpickup"
+    }
+  }
+]

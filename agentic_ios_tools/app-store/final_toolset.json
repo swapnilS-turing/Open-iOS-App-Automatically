@@ -1,0 +1,24 @@
+[
+  {
+    "declaration": {
+      "name": "open_app_store",
+      "description": "Open App Store to a URL (itms or itms-apps).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_app_store"
+    }
+  }
+]

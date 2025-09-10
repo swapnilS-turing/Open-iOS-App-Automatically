@@ -1,0 +1,37 @@
+[
+  {
+    "declaration": {
+      "name": "open_apple_maps",
+      "description": "Open Apple Maps with a specified route.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          },
+          "transport": {
+            "type": "string",
+            "enum": [
+              "d",
+              "r",
+              "w",
+              "c"
+            ]
+          }
+        },
+        "required": [
+          "source",
+          "destination"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_apple_maps"
+    }
+  }
+]

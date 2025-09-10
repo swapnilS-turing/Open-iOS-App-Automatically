@@ -1,0 +1,24 @@
+[
+  {
+    "declaration": {
+      "name": "open_phone_call",
+      "description": "Start a phone call to a number.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "phone": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "phone"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_phone_call"
+    }
+  }
+]

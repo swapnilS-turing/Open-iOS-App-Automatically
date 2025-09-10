@@ -1,0 +1,27 @@
+[
+  {
+    "declaration": {
+      "name": "open_sms",
+      "description": "Open Messages with an SMS/MMS to a number, optional body.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "phone": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "phone"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "execution": {
+      "module": "tools_action.py",
+      "function": "open_sms"
+    }
+  }
+]
